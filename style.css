@@ -42,7 +42,7 @@ header nav ul li a {
   font-size: 20px;
 }
 header nav ul li a:hover {
-  font-size: 25px;
+  opacity: 0.5;
 }
 
 .content {
@@ -82,7 +82,7 @@ h1 {
 /* Projects section */
 .projects-header {
   display: flex;
-  background-color: #05405e;
+  background-color: #052c3f;
   height: 60px;
   color: #fbfcfd;
   align-items: center;
@@ -97,7 +97,7 @@ h1 {
 
 .projects {
   display: flex;
-  background: linear-gradient(#05405e, #1a1a1a);
+  background-color: #05405e;
   justify-content: space-around;
   width: 100%;
   position: relative;
@@ -113,10 +113,23 @@ h1 {
 .project1 img {
   width: 100%;
 }
+.project1 p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 .project1 h4,
 p {
   color: #fbfcfd;
+}
+.buttons1 button {
+  font-size: 20px;
+  background-color: #05405e;
+}
+.buttons1 button a {
+  color: whitesmoke;
+  font-weight: 4;
+  text-decoration: none;
 }
 .project2 {
   width: 85%;
@@ -126,6 +139,19 @@ p {
 }
 .project2 img {
   width: 100%;
+}
+.buttons2 button {
+  font-size: 20px;
+  background-color: #05405e;
+}
+.buttons2 button a {
+  color: whitesmoke;
+  font-weight: 4;
+  text-decoration: none;
+}
+.project2 p {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .project2 h4,
 p {
@@ -137,12 +163,68 @@ p {
   overflow: hidden;
   margin: 5%;
 }
+.project3 p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .project3 img {
   width: 100%;
 }
 .project3 h4,
 p {
   color: #fbfcfd;
+}
+/* about me section */
+.about-me-header {
+  display: flex;
+  background-color: #052c3f;
+  height: 60px;
+  color: #fbfcfd;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.about-me div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+.about-me {
+  display: flex;
+  background-color: #05405e;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  color: whitesmoke;
+  border-bottom: 1px white solid;
+}
+.intro {
+  width: 85%;
+  background-color: #05405e;
+  overflow: hidden;
+  margin: 5%;
+}
+.me h4 {
+  text-decoration: underline;
+}
+.me {
+  width: 85%;
+  background-color: #05405e;
+  overflow: hidden;
+  margin: 5%;
+}
+.me ul li {
+  list-style-type: circle;
+}
+.services {
+  width: 85%;
+  background-color: #05405e;
+  overflow: hidden;
+  margin: 5%;
+}
+.services h4 {
+  text-decoration: underline;
 }
 
 @keyframes bubble {
@@ -160,6 +242,42 @@ p {
     transform: translateY(-80vh);
     opacity: 0;
   }
+}
+.footer-header {
+  display: flex;
+  background-color: #052c3f;
+  height: 60px;
+  color: #fbfcfd;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.footer {
+  display: flex;
+  background-color: #05405e;
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  color: whitesmoke;
+  border-bottom: 1px white solid;
+}
+.form {
+  width: 85%;
+  background-color: transparent;
+  overflow: hidden;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.socials-list {
+  list-style: none;
 }
 
 .bubbles img:nth-child(1) {
@@ -231,12 +349,12 @@ p {
   /* projects section */
   .projects-header {
     display: flex;
-    background-color: #05405e;
+    background-color: #052c3f;
     height: 60px;
     color: #fbfcfd;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .projects div {
@@ -246,12 +364,13 @@ p {
 
   .projects {
     display: flex;
-    background: linear-gradient(#05405e, #1a1a1a);
+    background-color: #05405e;
     justify-content: space-evenly;
     width: 100%;
     position: relative;
     overflow: hidden;
     flex-direction: row;
+    border-bottom: 1px whitesmoke solid;
   }
   .project1 {
     width: 30%;
@@ -260,6 +379,19 @@ p {
   }
   .project1 img {
     width: 100%;
+  }
+  .project1 p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .buttons1 button {
+    font-size: 20px;
+    background-color: #05405e;
+  }
+  .buttons1 button a {
+    color: whitesmoke;
+    font-weight: 4;
+    text-decoration: none;
   }
 
   .project1 h4,
@@ -289,5 +421,47 @@ p {
   .project3 h4,
   p {
     color: #fbfcfd;
+  }
+  /* about me section */
+  .about-me-header {
+    display: flex;
+    background-color: #052c3f;
+    height: 60px;
+    color: #fbfcfd;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .about-me {
+    display: flex;
+    background-color: #05405e;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    color: whitesmoke;
+  }
+  .footer {
+    display: flex;
+    background-color: #05405e;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+    color: whitesmoke;
+    border-bottom: 1px white solid;
+  }
+  .form {
+    width: 30%;
+    background-color: transparent;
+    overflow: hidden;
+    margin: 5%;
+  }
+  .socials {
+    width: 30%;
+    margin-top: 30px;
+    list-style: none;
   }
 }
