@@ -13,8 +13,11 @@
   overflow: hidden;
 }
 .Name {
-  font-size: 35px;
+  font-size: 40px;
   color: whitesmoke;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 5px;
 }
 
 .navbar {
@@ -22,44 +25,46 @@
   height: 15%;
   margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+
   /* background-color: #37718e; */
 }
-
-button {
-  color: #fbfcfd;
-  padding: 10px 25px;
-  background: whitesmoke;
-  border: 1px solid #8ee3ef;
-  border-radius: 20px;
-  outline: none;
-  cursor: pointer;
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: center;
+}
+header nav ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+  font-size: 20px;
+}
+header nav ul li a:hover {
+  font-size: 25px;
 }
 
 .content {
   color: #fbfcfd;
-  position: absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-125%);
-  z-index: 2;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  /* margin-left: 40px;
+  margin-right: 20px; */
+  flex-direction: column;
+}
+.content p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 h1 {
-  font-size: 80px;
-  margin: 10px 0 30px;
+  font-size: 55px;
+  margin: 10px 0 10px;
   line-height: 80px;
-}
-
-.side-bar {
-  width: 75px;
-  height: 100vh;
-  background: linear-gradient(#fbfcfd, #00545d);
-  position: absolute;
-  right: 0;
-  top: 0;
-  opacity: 0.1;
+  text-align: center;
 }
 
 .bubbles img {
@@ -73,6 +78,71 @@ h1 {
   justify-content: space-around;
   position: absolute;
   bottom: -70px;
+}
+/* Projects section */
+.projects-header {
+  display: flex;
+  background-color: #05405e;
+  height: 60px;
+  color: #fbfcfd;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.projects div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.projects {
+  display: flex;
+  background: linear-gradient(#05405e, #1a1a1a);
+  justify-content: space-around;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+.project1 {
+  width: 85%;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  margin: 5%;
+}
+.project1 img {
+  width: 100%;
+}
+
+.project1 h4,
+p {
+  color: #fbfcfd;
+}
+.project2 {
+  width: 85%;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  margin: 5%;
+}
+.project2 img {
+  width: 100%;
+}
+.project2 h4,
+p {
+  color: #fbfcfd;
+}
+.project3 {
+  width: 85%;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  margin: 5%;
+}
+.project3 img {
+  width: 100%;
+}
+.project3 h4,
+p {
+  color: #fbfcfd;
 }
 
 @keyframes bubble {
@@ -112,4 +182,112 @@ h1 {
 }
 .bubbles img:nth-child(7) {
   animation-delay: 7s;
+}
+
+/* desktop mode */
+
+@media all and (min-width: 750px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .Name {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: left;
+    padding-top: 10px;
+    margin-bottom: 5px;
+  }
+  .navbar {
+    width: 40%;
+    margin-top: 50px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .content {
+    color: #fbfcfd;
+    display: flex;
+    justify-content: center;
+    margin-top: 230px;
+    margin-left: 40px;
+    margin-right: 20px;
+    flex-direction: column;
+  }
+  .content p {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 70px;
+    margin: 10px 0 10px;
+    line-height: 80px;
+    text-align: center;
+  }
+  /* projects section */
+  .projects-header {
+    display: flex;
+    background-color: #05405e;
+    height: 60px;
+    color: #fbfcfd;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .projects div {
+    border: 1px #ccc solid;
+    padding: 10px;
+  }
+
+  .projects {
+    display: flex;
+    background: linear-gradient(#05405e, #1a1a1a);
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .project1 {
+    width: 30%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+  }
+  .project1 img {
+    width: 100%;
+  }
+
+  .project1 h4,
+  p {
+    color: #fbfcfd;
+  }
+  .project2 {
+    width: 30%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+  }
+  .project2 img {
+    width: 100%;
+  }
+  .project2 h4,
+  p {
+    color: #fbfcfd;
+  }
+  .project3 {
+    width: 30%;
+    background-color: #1a1a1a;
+    overflow: hidden;
+  }
+  .project3 img {
+    width: 100%;
+  }
+  .project3 h4,
+  p {
+    color: #fbfcfd;
+  }
 }
