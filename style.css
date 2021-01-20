@@ -122,14 +122,31 @@ h1 {
 p {
   color: #fbfcfd;
 }
-.buttons1 button {
-  font-size: 20px;
-  background-color: #05405e;
-}
-.buttons1 button a {
+.links1 a {
   color: whitesmoke;
   font-weight: 4;
   text-decoration: none;
+  font-size: 20px;
+}
+.links1 a:hover {
+  opacity: 0.5;
+}
+.code1:visited {
+  opacity: 0.5;
+}
+.live1:visited {
+  opacity: 0.5;
+}
+.live1 {
+  /* border: 1px whitesmoke solid; */
+  background-color: #05405e;
+  margin-right: 5px;
+  padding: 5px;
+}
+.code1 {
+  background-color: rgb(121, 4, 43);
+  margin-right: 5px;
+  padding: 5px;
 }
 .project2 {
   width: 85%;
@@ -140,14 +157,31 @@ p {
 .project2 img {
   width: 100%;
 }
-.buttons2 button {
-  font-size: 20px;
-  background-color: #05405e;
-}
-.buttons2 button a {
+.links2 a {
   color: whitesmoke;
   font-weight: 4;
   text-decoration: none;
+  font-size: 20px;
+}
+.live2 {
+  /* border: 1px whitesmoke solid; */
+  background-color: #05405e;
+  margin-right: 5px;
+  padding: 5px;
+}
+.code2 {
+  background-color: rgb(121, 4, 43);
+  margin-right: 5px;
+  padding: 5px;
+}
+.links2 a:hover {
+  opacity: 0.5;
+}
+.code2:visited {
+  opacity: 0.5;
+}
+.live2:visited {
+  opacity: 0.5;
 }
 .project2 p {
   padding-top: 10px;
@@ -188,6 +222,9 @@ p {
   border: 1px #ccc solid;
   padding: 10px;
 }
+ul {
+  line-height: 2;
+}
 .about-me {
   display: flex;
   background-color: #05405e;
@@ -213,6 +250,7 @@ p {
   background-color: #05405e;
   overflow: hidden;
   margin: 5%;
+  line-height: 2;
 }
 .me ul li {
   list-style-type: circle;
@@ -225,6 +263,14 @@ p {
 }
 .services h4 {
   text-decoration: underline;
+}
+.form a {
+  background-color: #052c3f;
+  color: whitesmoke;
+  text-decoration: none;
+}
+.form a:hover {
+  opacity: 0.5;
 }
 
 @keyframes bubble {
